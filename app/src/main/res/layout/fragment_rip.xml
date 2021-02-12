@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RipFragment">
+
+    <TextView
+        android:id="@+id/message_rip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:justificationMode="inter_word"
+        android:text="@string/rip_message"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        tools:ignore="SmallSp"
+        tools:targetApi="o" />
+
+    <Spinner
+        android:id="@+id/spinnerMun"
+        android:layout_width="277dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/message_rip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/bottomBar"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/sortUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/spinnerMun"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="325dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/ic_arrow_upward_black_24dp" />
+
+    <ImageView
+        android:id="@+id/sortDown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/spinnerMun"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_marginStart="295dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/ic_arrow_downward_black_24dp"
+        android:tint="#FFFFFF" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRIP"
+        android:layout_width="match_parent"
+        android:layout_height="491dp"
+        android:layout_below="@+id/sortUp"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>
